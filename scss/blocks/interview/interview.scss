@@ -1,0 +1,31 @@
+.interview {
+    &__btn {
+        width: 100%;
+    }
+    &-element {
+        margin-bottom: 60px;
+        @media (max-width: 576px) {
+            margin-bottom: 35px;
+        }
+        &__title {
+            margin-bottom: 45px;
+            font-weight: 700;
+            max-width: 660px;
+            @media (max-width: 576px) {
+                // margin-bottom: 30px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 40px;
+                margin-bottom: 25px;
+            }
+        }
+        &__item {
+            margin-bottom: 30px;
+            position: relative;
+            &--mb15 {
+                margin-bottom: 15px;
+            }
+        }
+        
+    }
+}

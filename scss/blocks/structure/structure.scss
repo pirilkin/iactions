@@ -1,0 +1,25 @@
+.structure {
+    &__title {
+        margin-bottom: 30px;
+        @media (max-width: 567px) {
+            // font-size: 19px;
+            font-size: 24px;
+        }
+        &--second {
+            margin-bottom: 40px;
+            
+        }
+    }
+    &__text {
+        margin-bottom: 70px;
+        font-size: 18px;
+        @media (max-width: 567px) {
+            font-size: 16px;
+        }
+    }
+    &__img {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+}

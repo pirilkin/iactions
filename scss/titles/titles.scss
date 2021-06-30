@@ -1,0 +1,379 @@
+.products,
+.brands,
+.reviews,
+.task-question,
+.cases,
+.experts,
+.location,
+.recommends,
+.licenses,
+.steps,
+.offer,
+.reasons,
+.goals,
+.company-left,
+.workwith,
+.services-item,
+.ad-agency,
+.quiz-question,
+.case,
+.interview-element,
+.promotion,
+.news,
+.reviews,
+.custom-modal-content,
+.reviews {
+    &__title {
+        @media(max-width: 1499px) {
+            font-size: 22px !important;
+            line-height: 30px !important;
+            margin-bottom: 20px;
+        }
+
+        @media(max-width: 1199px) {
+            margin-bottom: 20px !important;
+        }
+
+        @media(max-width: 576px) {
+            font-size: 22px !important;
+            line-height: 30px !important;
+            // margin-bottom: 10px;
+        }
+    }
+}
+.goals{
+    &__title{
+        @media(max-width: 1199px) {
+            margin-bottom: 10px !important;
+        }
+    }
+}
+
+.custom-modal-content__subtitle {
+    @media(max-width: 1499px) {
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+
+    @media(max-width: 1199px) {
+        margin-bottom: 10px !important;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 22px !important;
+        line-height: 30px !important;
+        // margin-bottom: 10px;
+    }
+}
+
+
+
+.instruments__title,
+.steps-item__name,
+
+.ad-agency__subtitle,
+.promotion__text,
+.task-question__ask {
+
+    @media(max-width: 1499px) {
+        font-size: 18px !important;
+        line-height: 30px !important;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 18px !important;
+        line-height: 30px !important;
+    }
+}
+
+.instruments__name,
+.experts-item-bottom__title,
+.experts-item-bottom__message,
+.reviews-slider-item__name,
+.task__line,
+.location-block__title,
+.points-item__name,
+.offer__subtitle,
+.stats-title__line,
+.contacts__title,
+
+.company-right__text,
+.reviews-slider-item__document,
+.instruments-tabs__link,
+
+// .portfolio-post-bottom__title,
+.quiz-question__subtitle,
+.title-line,
+// .post-bottom__title,
+.last-step__subtitle,
+.case__task,
+.case-goals__title,
+.case__text,
+.products-tabs__element,
+.products-tabs__element--slider,
+.products-tags__element,
+.cases-tags__element span,
+.custom-modal-content__point,
+.rubrics__title,
+.post-bottom__title,
+.portfolio-post-bottom__title {
+    @media(max-width: 1499px) {
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+}
+
+
+
+.instruments__text,
+.reviews-slider-item__text,
+.reviews-slider-item__position,
+.experts-item-bottom__position,
+.cases__appeal-text,
+.contacts__text,
+.steps-item__text,
+
+// .post-bottom__text,
+.portfolio-post-bottom__subtitle,
+.ad-agency__point,
+.case-goals__element,
+.menu__link,
+.intro-content__text,
+.sales-text__words,
+.workwith__text,
+.title-line,
+.instruments__tag,
+// .portfolio-post-bottom__text,
+.btn-orange-2,
+.form-custom-test__label,
+.form-custom__name,
+.footer-nav__link,
+.btn-green {
+    @media(max-width: 1499px) {
+        font-size: 14px !important;
+        line-height: 25px !important;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 14px !important;
+        line-height: 25px !important;
+    }
+}
+
+.rubrics__link,
+.company-left__text,
+.goals__text,
+.points-item__text,
+.post-bottom__text,
+.portfolio-post-bottom__text{
+    @media(max-width: 1499px) {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+}
+
+.instruments-tabs,
+.products-tabs,
+.cases-tags {
+    display: flex;
+    margin-bottom: 50px;
+
+    @media (max-width: 1199px) {
+        flex-wrap: nowrap;
+        cursor: pointer;
+
+        &::-webkit-scrollbar {
+            /* This is the magic bit for WebKit */
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px 0;
+    }
+
+    @media (max-width: 576px) {
+        // margin-bottom: 15px;
+        padding: 10px 0;
+    }
+
+    &__element {
+        @media (max-width: 1199px) {
+            font-size: 16px;
+            margin-right: 25px;
+        }
+
+        @media (max-width: 768px) {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 576px) {
+            // padding-right: 15px !important;
+            // padding-left: 15px !important;
+            margin-right: 10px;
+            white-space: nowrap;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        @media (max-width: 329px) {
+            // padding-right: 15px !important;
+            // padding-left: 15px !important;
+            margin-right: 8px;
+        }
+
+        span {
+            &:hover {
+                border: 1px solid $primegreen;
+            }
+        }
+    }
+}
+
+.workwith,
+.promotion,
+.products,
+.cases,
+.task,
+.experts,
+.news,
+.footer {
+    @media(max-width: 1499px) {
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    @media(max-width: 1199px) {
+        padding: 25px 0;
+    }
+
+    @media(max-width: 991px) {
+        padding: 15px 0;
+    }
+}
+
+.instruments-block,
+.instruments-tabs {
+    @media(max-width: 1499px) {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+.cases,
+.experts,
+.news {
+    &__title {
+        @media(max-width: 1499px) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.container {
+    @media(max-width: 1499px) {
+        max-width: 1199px;
+    }
+}
+
+.intro-content__title {
+    @media(max-width: 1499px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    @media(max-width: 1199px) {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+}
+
+.products .client .client-slider__slide {
+    // display: none;
+    margin-bottom: 0;
+
+    // @media(max-width: 768px) {
+    //     margin-bottom: 0 !important;
+    // }
+}
+
+.client .client-slider_row {
+    display: flex;
+
+    @media(max-width: 991px) {
+        display: none;
+    }
+}
+
+.client .client-swiper_slider {
+    display: none;
+
+    @media(max-width: 991px) {
+        display: block;
+    }
+}
+
+.company,
+.goals,
+.recommends,
+.licenses-sliders,
+.brands,
+.reviews,
+.offer {
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    @media (max-width: 1499px) {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.points {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media (max-width: 1499px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.idea {
+    margin: 0;
+
+    @media (max-width: 1499px) {
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+}
+
+.reviews,
+.brands,
+.points,
+.recommends,
+.licenses,
+.offer {
+    &__title {
+        margin-bottom: 30px;
+
+        @media (max-width: 1499px) {
+            margin-bottom: 20px;
+        }
+    }
+}

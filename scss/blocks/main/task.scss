@@ -1,0 +1,117 @@
+.task {
+    margin-bottom: 100px;
+    @media (max-width: 1499px) {
+        margin-bottom: 45px;
+    }
+    @media (max-width: 576px) {
+        margin-bottom: 45px;
+    }
+    &__dispatch {
+        width: 100%;
+    }
+    &__line {
+        @media (max-width: 1499px){
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @media (max-width: 576px) {
+            font-size: 18px;
+            line-height: 25px;
+            &:before {
+                background-color: $primegreen !important;
+            }
+        }
+    }
+    &-question {
+        margin-bottom: 10px;
+        @media (max-width: 576px) {
+            // margin-bottom: 21px;
+            margin-bottom: 0;
+        }
+        &__ask {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 45px;
+ 
+            @media(max-width: 1499px) {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            @media(max-width: 991px) {
+                margin-top: 45px;
+            }
+            @media (max-width: 576px) {
+                font-size: 22px;
+                margin-top: 30px;
+                margin-bottom: 21px;
+                line-height: 32px;
+            }
+        }
+        &__title {
+            margin-bottom: 50px;
+            font-size: 45px;
+            @media (max-width: 1499px){
+                margin-bottom: 30px;
+            }
+            @media (max-width: 767px) {
+                font-size: 38px;
+            }
+            @media (max-width: 576px) {
+                font-size: 26px;
+                margin-bottom: 13px;
+                line-height: 38px;
+            }
+            span {
+                font-weight: 600;
+            }
+        }
+        &__subtitle {
+            font-weight: 500;
+            margin-bottom: 45px;
+            @media (max-width: 1499px){
+                margin-bottom: 30px;
+            }
+            @media (max-width: 767px) {
+                font-size: 22px;
+            }
+            @media (max-width: 576px) {
+                font-size: 18px;
+                margin-bottom: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+    &-progress {
+        height: 16px;
+        width: 100%;
+        background-color: #DEE2E6;
+        margin-top: 30px;
+        position: relative;
+        @media (max-width: 576px) {
+            margin-top: 15px;
+        }
+        &__fill {
+            background-color: $primeorange;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25%;
+            align-items: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__num {
+            color: $white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    &-block{
+        &__img{
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+}

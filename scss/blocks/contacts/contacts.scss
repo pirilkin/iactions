@@ -1,0 +1,128 @@
+.contacts {
+    color: black;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 40px;
+    // &-container{
+    //     &__form{
+    //         max-width: 1920px;
+    //         margin: 0 auto;
+    //     }
+    // }
+    iframe {
+        @media (max-width:991px) {
+            height: 100vh;
+        }
+
+        @media (max-width:576px) {
+            height: 878px;
+        }
+    }
+
+    &-top {
+        margin-bottom: 40px;
+
+        @media (max-width:576px) {
+            margin-bottom: 10px;
+
+        }
+    }
+
+    &__block {
+        background-color: $white;
+        border: 1px solid #dadada;
+        border-radius: 10px;
+        padding: 30px 50px;
+        max-width: 495px;
+
+        // margin-top: 100px;
+
+        @media (max-width: 991px) {
+            // margin-top: 0;
+            margin: auto;
+        }
+        @media (max-width: 768px) {
+            // margin-top: 0;
+            margin: 0;
+        }
+
+        @media (max-width: 576px) {
+            max-width: 347px;
+            padding: 15px;
+        }
+
+        &--official {
+            position: absolute;
+            top: 2%;
+            left: 15%;
+            margin-top: 0;
+            width: 100%;
+            max-width: 495px;
+            max-height: 678px;
+
+
+            @media (max-width:991px) {
+                top: 5%;
+                transform: translateX(-50%);
+                left: 50%;
+
+            }
+
+            @media (max-width:576px) {
+                max-width: 347px;
+                max-height: 581px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+
+            }
+        }
+
+    }
+
+    &__text {
+        font-size: 22px;
+        font-weight: 500;
+
+        @media (max-width: 576px) {
+            font-size: 18px !important;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    &__line {
+        // align-items: start;
+        display: flex;
+        align-items: center;
+        color: black;
+        margin-bottom: 5px;
+
+        @media (max-width:576px) {
+            margin-left: 7px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        margin-top: 20px;
+
+        @media (max-width:576px) {
+            font-size: 16px;
+
+        }
+    }
+
+    &__icon {
+        margin-right: 18px;
+        margin-top: 5px;
+
+        @media (max-width:576px) {
+            margin-right: 12px;
+        }
+    }
+}

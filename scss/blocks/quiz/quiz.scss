@@ -1,0 +1,97 @@
+.quiz {
+    &__line {
+        margin-bottom: 45px;
+        @media (max-width: 1499px) {
+            margin-bottom: 0px;
+        }
+        @media (max-width: 576px) {
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+    &-question {
+        
+        &__title {
+            margin-bottom: 60px;
+            font-size: 45px;
+            @media (max-width:768px) {
+                font-size: 38px;
+            }
+            @media (max-width: 576px) {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            span {
+                font-weight: 600;
+            }
+        }
+        &__subtitle {
+            font-size: 28px;
+            margin-bottom: 45px;
+            line-height: 53px;
+            @media (max-width: 576px) {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &-item {
+        margin: 125px 0px;
+        @media (max-width:768px) {
+            margin: 75px 0;
+        }
+        @media (max-width:576px) {
+            margin: 40px 0 30px;
+        }
+        &__title {
+            font-weight: 700;
+            margin-bottom: 45px;
+            @media (max-width: 576px) {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+        }
+        &__input {
+            margin-bottom: 30px;
+        }
+        &__btn {
+            
+            button {
+                padding-top: 17px;
+                width: 100% !important;
+                padding-bottom: 17px;
+            }
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+
+            }
+            &--trans {
+                background-color: #52C2A4 !important; 
+            }
+            &--bd {
+                border: 3px solid #bebebe;
+                color: #000;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 15px;
+                text-align: left;
+                padding: 17px 30px;
+                border-radius: 10px;
+                transition: .1s linear all;
+                &:hover {
+                    border-color: $primegreen;
+                    color: $primegreen;
+                }
+            }
+        }
+    }
+    &__img {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}

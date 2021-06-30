@@ -1,0 +1,10 @@
+.idea{
+    &-item{
+        &:last-child{
+            @media (max-width: 1200px){
+                margin-bottom: 40px;
+            }
+        }
+    }
+    
+}

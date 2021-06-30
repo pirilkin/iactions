@@ -1,0 +1,83 @@
+.markethelp {
+    &-page {
+        &-item {
+            &.active {
+                & .markethelp-page-link {
+                    background: $primegreen;
+                    border-color: $primegreen;
+                }
+            }
+        }
+
+        &-link {
+            font-size: 16px;
+            color: $primegreen;
+            &:hover{
+                color: $primegreen;
+            }
+        }
+
+    }
+    // &-list{
+    //     max-width: 250px;
+    //     &__items{
+    //         list-style-type: none; /* Убираем исходные маркеры */
+    //         counter-reset: my-counter; /* Задаём имя счетчика */
+    //     }
+    //     &__item{
+    //         margin-bottom: 20px;
+    //         list-style: inherit;
+    //         display: flex;
+    //         align-items: center;
+    //         &::before {
+    //             content: counter(my-counter); /* Выводим число */
+    //             counter-increment: my-counter; /* Увеличиваем значение счётчика */
+    //             border-radius: 50%;
+    //             width: 25px;
+    //             min-width: 25px;
+    //             height: 25px;
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+    //             border: 2px solid $primegreen;
+    //             color: $primegreen;
+    //             font-weight: 600;
+    //             margin-right: 15px;
+    //             font-size: 16px;
+    //         }
+    //     }
+    //     &__link{
+    //         display: flex;
+    //         align-items: center;
+    
+    //         &:hover{
+    //             .markethelp-list__text{
+    //                 color: $primegreen;
+    //                 font-weight: 600;
+    //             }
+    //         }
+    //     }
+    //     // &__number{
+    //     //     border-radius: 50%;
+    //     //     width: 25px;
+    //     //     min-width: 25px;
+    //     //     height: 25px;
+    //     //     display: flex;
+    //     //     justify-content: center;
+    //     //     align-items: center;
+    //     //     border: 2px solid $primegreen;
+    //     //     color: $primegreen;
+    //     //     font-weight: 600;
+    //     //     margin-right: 15px;
+    //     //     font-size: 16px;
+    //     // }
+    //     &__text{
+    //         transition: 0.2s;
+    //         font-size: 16px;
+    //         line-height: 22px;
+    //         font-weight: 500;
+    //         color: #484848;
+
+    //     }
+    // }
+}

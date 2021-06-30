@@ -1,0 +1,82 @@
+.info {
+    &-tender {
+
+        &__icon {
+            margin-right: 10px;
+
+            @media (max-width: 1720px) {
+                width: 28px;
+            }
+
+            @media (max-width: 576px) {
+                width: 35px;
+            }
+        }
+
+        &__text {
+            color: $black;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
+            @media (max-width: 374px) {
+                font-size: 12px;
+            }
+        }
+
+        &__email {
+            color: $primegreen;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+            }
+            @media (max-width: 374px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &-contact {
+        @media (max-width: 1200px) {
+            // margin-bottom: 50px;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__num {
+            // margin-right: 30px;
+            margin-right: 10px;
+            font-size: 30px;
+            font-weight: 600;
+            color: $primetext;
+
+            @media (max-width: 1720px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 576px) {
+                margin-right: 0;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__btn {
+            @media(max-width: 991px) {
+                color: $primegreen !important;
+                border-color: $primegreen !important;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                border-color: $primeorange !important;
+                color: $primeorange !important;
+                // padding: 18px 21px;
+            }
+        }
+    }
+}

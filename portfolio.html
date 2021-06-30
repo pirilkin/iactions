@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="libs/css/aos.css">
+    <link rel="stylesheet" href="libs/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Портфолио и кейсы</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header header--main">
+            <div class="info">
+                <div class="row justify-content-between align-items-center">
+                    <div
+                        class="logo col-xl-5 d-flex align-items-center order-xl-1 col-sm-3 order-sm-1 order-1 col-6 header-logo">
+                        <a href="index.html">
+                            <img src="img/logo_s.png" alt="" class="logo__img">
+                        </a>
+                        <div class="logo__text d-none d-xl-block">
+                            Креативное технологичное<br>
+                            маркетинговое агентство. Россия и СНГ
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-3 d-flex align-items-center order-xl-2 order-sm-3 col-sm-6 info-tender order-4 col-12 justify-content-center justify-content-sm-start header-tender">
+                        <img src="img/header/calendar.svg" alt="" class="info-tender__icon">
+                        <div class="info-tender__content">
+                            <div class="info-tender__text">У вас есть ТЗ? Мы готовы к тендеру:</div>
+                            <a href="mailto:iactions@original-group.ru"
+                                class="info-tender__email">iactions@original-group.ru</a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-4 d-flex align-items-center order-xl-3 order-sm-2 col-sm-9 justify-content-sm-end info-contact flex-sm-row order-3 col-12 flex-column header-number">
+                        <div class="info-contact__num"> <a href="tel:8 800 505-34-14">8 800 505-34-14</a></div>
+                        <button class="info-contact__btn btn-def btn-orange callback_order" data-toggle="modal"
+                            data-target=".bd-callback">Заказать обратный
+                            звонок</button>
+                    </div>
+                    <div
+                        class="col-sm-6 d-xl-none d-flex order-sm-4 justify-content-end order-2 col-6 header-burger">
+                        <div id="burger" class="burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu  popup-menu d-xl-flex justify-content-between">
+                <a href="index.html" class="menu__link">Главная</a>
+                <a href="about.html" class="menu__link">О компании</a>
+                <a href="services.html" class="menu__link">Услуги</a>
+                <a href="markethelp.html" class="menu__link">В помощь маркетологу</a>
+                <a href="portfolio.html" class="menu__link active">Портфолио и кейсы</a>
+                <a href="contacts.html" class="menu__link">Контакты</a>
+                <a href="ad-agency.html" class="menu__link">Для рекламных агентств</a>
+                <a href="" class="menu__link">Личный кабинет</a>
+            </div>
+            <nav class="nav">
+                <a href="" class="nav__link">Главная</a>
+                <img src="img/header/nav.svg" class="nav__divider" alt="">
+                <a href="" class="nav__link active">Портфолио и кейсы</a>
+            </nav>
+        </header>
+
+        <main class="blog">
+            <div class="row w-100">
+                <div class="col-xl-2 col-lg-3 blog-aside__container">
+                    <aside class="rubrics" id="portfolio-tabs">
+                        <!-- <div class="rubrics" id="rubrics__menu"> -->
+                        <h3 class="rubrics__title">Категории</h3>
+                        <!-- <div class="portfolio-tabs-nav" > -->
+                        <div class="rubrics__menu portfolio-tabs-nav">
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-9" data-folio="action-block"
+                                    class="rubrics__link portfolio__link active">Промоакции</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-1" data-folio="creative-block"
+                                    class="rubrics__link portfolio__link">Креатив</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-2" data-folio="program-block"
+                                    class="rubrics__link portfolio__link">Программы лояльности</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-3" data-folio="video-block"
+                                    class="rubrics__link portfolio__link">Видеореклама</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-4" data-folio="materials-block"
+                                    class="rubrics__link portfolio__link">Промоматериалы</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-5" data-folio="stends-block"
+                                    class="rubrics__link portfolio__link">Выставочные стенды</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-6" data-folio="pos-block"
+                                    class="rubrics__link portfolio__link">Pos-материалы</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-7" data-folio="product-block"
+                                    class="rubrics__link portfolio__link">Сувенирная продукция</a>
+                            </div>
+                            <div class="rubrics__element">
+                                <a href="#portfolio-tab-8" data-folio="brends-block"
+                                    class="rubrics__link portfolio__link">Брендирование</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="0" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-once="true"  class="col-xl-10 col-lg-9">
+                    <div class="portfolio-post">
+                        <div class="row">
+                            <!-- <div class="row portfolio-tabs__items"> -->
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items brends-block" id="portfolio-tab-1">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items product-block" id="portfolio-tab-2">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items brends-block" id="portfolio-tab-12">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items product-block" id="portfolio-tab-4">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items brends-block" id="portfolio-tab-3">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items pos-block" id="portfolio-tab-9">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items materials-block" id="portfolio-tab-10">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items pos-block" id="portfolio-tab-13">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items pos-block" id="portfolio-tab-11">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items stends-block" id="portfolio-tab-23">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items stends-block" id="portfolio-tab-5">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items stends-block" id="portfolio-tab-22">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items materials-block" id="portfolio-tab-6">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items materials-block" id="portfolio-tab-14">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items video-block" id="portfolio-tab-7">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items video-block" id="portfolio-tab-32">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items program-block" id="portfolio-tab-8">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items program-block" id="portfolio-tab-18">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items action-block" style="display: block;"
+                                id="portfolio-tab-28">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case-2.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <!-- <h4 class="post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="post-bottom__text">Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа дальнейших соображения высшего порядка, а также дальнейшее развитие различных форм деятельности направлений развития. Задача , в особенности же сложившаяся структура организации требуют от нас анализа развития. </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items action-block" style="display: block;"
+                                id="portfolio-tab-16">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 portfolio-tabs-items creative-block" id="portfolio-tab-15">
+                                <div class="portfolio-post__item">
+                                    <div class="portfolio-post-top">
+                                        <a href="case.html" class="portfolio-post-top__link">
+                                            <img src="img/portfolio/lotions.jpg" alt="" class="portfolio-post-top__img">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-post-bottom">
+                                        <div class="portfolio-post-bottom__content">
+                                            <h3 class="portfolio-post-bottom__title">Lotions</h3>
+                                            <h4 class="portfolio-post-bottom__subtitle">Сроки 2 месяца</h4>
+                                            <p class="portfolio-post-bottom__text">Равным образом дальнейшее развитие
+                                                различных форм деятельности требуют от нас анализа дальнейших
+                                                соображения высшего порядка, а также дальнейшее развитие различных форм
+                                                деятельности направлений развития. Задача , в особенности же сложившаяся
+                                                структура организации требуют от нас анализа развития. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post-navigation">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                              <li class="page-item markethelp-page-item">
+                                <a class="markethelp-page-link page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item markethelp-page-item active">
+                                  <a class="markethelp-page-link page-link" href="#">1</a>
+                                </li>
+                              <li class="page-item markethelp-page-item">
+                                  <a class="markethelp-page-link page-link" href="#">2</a>
+                                </li>
+                              <li class="page-item markethelp-page-item">
+                                  <a class="markethelp-page-link page-link" href="#">3</a>
+                                </li>
+                              <li class="page-item markethelp-page-item">
+                                <a class="markethelp-page-link page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container container-custom">
+            <div class="info">
+                <div class="info">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="logo footer-logo col-xl-5 col-lg-3 d-flex align-items-center col-6">
+                            <a href="index.html">
+                                <img src="img/logo_s.png" alt="" class="logo__img">
+                            </a>
+                            <div class="logo__text d-none d-xl-block">
+                                Креативное технологичное<br>
+                                маркетинговое агентство. Россия и СНГ
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-flex align-items-center col-sm-6 info-ten col-12 justify-content-center  justify-content-lg-end justify-content-md-end justify-content-sm-start">
+                            <img src="img/header/calendar.svg" alt="" class="info-tender__icon">
+                            <div class="info-tender__content">
+                                <div class="info-tender__text">У вас есть ТЗ? Мы готовы к тендеру:</div>
+                                <a href="mailto:iactions@original-group.ru"
+                                    class="info-tender__email">iactions@original-group.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-block__title col-xl-4  col-lg-5 d-flex align-items-center col-sm-12 justify-content-sm-end info-contact flex-sm-row flex-column">
+                            <div class="info-contact__num"> <a href="tel:8 800 505-34-14">8 800 505-34-14</a></div>
+                            <button class="info-contact__btn btn-def btn-orange callback_order" data-toggle="modal"
+                                data-target=".bd-callback">
+                                Заказать обратный звонок
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-menu">
+                <div class="col-lg-3 col-md-6 col-sm-6 order-xl-1  order-md-1  order-sm-1 footer-menu__element">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">О компании</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Услуги</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">В помощь маркетологу</a>
+                        </li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Портфолио и кейсы</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Контакты</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Для рекламных агентств</a>
+                        </li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Личный кабинет </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 order-xl-2 order-md-4  order-sm-4 footer-menu__element">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Скачать презентацию о
+                                компании</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Прайс-лист</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Лицензии и патенты</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Реквизиты компании</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6  order-xl-3  order-md-3  order-sm-3 footer-menu__element">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Карта сайта</a></li>
+                        <li class="footer-nav__element"><a href="policy.pdf" target="_blank"
+                                class="footer-nav__link">Политика
+                                конфиденциальности</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Согласие об использовании
+                                Cookies</a></li>
+                        <li class="footer-nav__element"><a href="" class="footer-nav__link">Согласие на обработку
+                                персональных данных</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6  order-xl-4 order-lg-4 order-md-2  order-sm-2 footer-menu__form footer-menu__element">
+                    <div class="footer-nav">
+                        <div class="footer-nav__element">
+                            <h5 class="footer-nav__link footer-form__title">Получать новости о продвижении брендов на
+                                email:</h5>
+                            <form action="" class="footer-form">
+                                <input placeholder="Адрес email" type="email"
+                                    class="form-custom__input form-control location-form__input footer-form__input" required>
+                                <button class="btn-def btn-green form-custom__btn location-form__btn footer-form__btn"
+                                    data-create="message">
+                                    Подписаться на рассылку
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 footer__copyright  order-xl-5  order-md-5 order-sm-5 ">
+                    <p class="footer__copyright-text">
+                        <span>АО «Оригинал». Государственная аккредитация организаций, осуществляющих деятельность в
+                            области
+                            информационных технологий. Запись в реестре No.2278 от 15.11.2012г.</span>
+                        <span>Лицензия Федеральной службы по надзору в сфере связи, информационных технологий и массовых
+                            коммуникаций №89883 от 28.07.2011г., №113116 от 15.08.2013г.</span>
+                    </p>
+                    <p class="footer__copyright-text">
+                        Все права защищены и охраняются законом. Использование материалов сайта разрешено только с
+                        письменного
+                        разрешения.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade bd-callback" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="form-custom__element form-custom__title">Заказать звонок</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                </div>
+                <div id="callback" class="callback-modal">
+                    <div id="callback-container" class="callback-container">
+                        <form class="form-custom location-form callback-form" action="">
+                            <!-- <div id="close" class="close">
+                                <span></span>
+                            </div> -->
+                            <!-- <h3 class="form-custom__element">Заказать звонок</h3> -->
+                            <div class="form-custom__element location-form__element">
+                                <h5 class="form-custom__name location-form__name">
+                                    Как к вам обращаться
+                                </h5>
+                                <input placeholder="Ваше имя" type="text"
+                                    class="form-custom__input form-control location-form__input">
+                            </div>
+                            <div class="form-custom__element location-form__element">
+                                <h5 class="form-custom__name location-form__name">
+                                    Укажите ваш телефон
+                                </h5>
+                                <input placeholder="8 (9XX) XXX XX XX" type="text"
+                                    class="form-custom__input form-control location-form__input">
+                            </div>
+                            <div class="form-custom__element location-form__element location-form__switch">
+                                <!-- <h5>сейчас</h5>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="form-slider"></span>
+                                          </label>
+                                          <h5>по времени</h5> -->
+                                <button id="switch_now" class="switch switch_now">сейчас</button>
+                                <button id="switch_later" class="switch switch_later active">по времени</button>
+
+                            </div>
+
+                            <div class="form-custom__element location-form__element">
+                                <!-- <h5 class="form-custom__name location-form__name">
+                                            Укажите вашу почту
+                                        </h5> -->
+                                <textarea name="textarea" id="textarea" placeholder="Например: завтра до 12:00"
+                                    class="form-custom__input form-control location-form__input callback-textarea"></textarea>
+                            </div>
+                            <button class="btn-def btn-green form-custom__btn location-form__btn">
+                                Позвоните мне
+                            </button>
+                            <p class="form-custom__copy location-form__copy">
+                                Нажимая на кнопку, вы даете согласие на обработку своих
+                                персональных данных и соглашаетесь с <a class="policy" href="policy.pdf"
+                                    target="_blank">"Политикой
+                                    конфиденциальности"</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-success congrat" role="alert">
+        <div class="alert-container row">
+            <!-- <h4 class="alert-heading">Отличная работа!</h4> -->
+            <div class="col-2 col-md-2 pl-0 check-block">
+                <!-- <div class="form-custom-chare"> -->
+                <div class="form-custom-test__circle">
+
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-10 text-block">
+                <p>Cпасибо, ваша завяка принята, ответим в течение xx минут</p>
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/js/bootbox.min.js"></script>
+    <script src="libs/js/bootbox.locales.min.js"></script>
+    <script src="libs/js/swiper-bundle.min.js"></script>
+    <script src="libs/js/jquery.fancybox.js"></script>
+    <script src="libs/js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

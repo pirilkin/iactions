@@ -1,0 +1,19 @@
+.header {
+    padding-top: 45px;
+    position: relative;
+
+    @media (max-width: 576px) {
+        padding-top: 32px;
+    }
+    &-logo,
+    &-number{
+        @media (max-width: 1199px) {
+            margin-bottom: 25px;
+        }
+    }
+    .nav{
+        @media (max-width: 1499px) {
+            margin-top:20px ;
+        }
+    }
+}

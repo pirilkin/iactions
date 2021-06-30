@@ -1,0 +1,52 @@
+.reasons {
+    @media (max-width: 576px) {
+        margin-bottom: 15px !important;
+    }
+    &__title {
+        font-weight: 600;
+        @media (max-width: 576px) {
+            font-size: 28px;
+            margin-bottom: 25px;
+            line-height: 40px;
+        }
+    }
+
+    &-item {
+        margin-bottom: 20px;
+        @media (max-width: 991px) {
+            margin-bottom: 60px;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+        &__icon {
+            @media (max-width: 576px) {
+                width: 25%;
+                margin-right: 15px;
+            }
+        }
+        &__name {
+            @media (max-width: 1720px) {
+                font-size: 20px !important;
+            }
+            @media (max-width: 768px) {
+                font-size: 22px !important;
+            }
+            @media (max-width: 576px) {
+                width: 75%;
+                font-size: 22px !important;
+                line-height: 30px;
+            }
+        }
+        &__text {
+            @media (max-width: 1400px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .col-md-6{
+        // @media (max-width: 576px) {
+        //     padding: 0;
+        // }
+    }
+}

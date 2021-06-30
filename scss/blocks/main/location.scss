@@ -1,0 +1,195 @@
+.location {
+    iframe {
+        pointer-events: none;
+        height: 580px;
+
+        @media (max-width: 1499px) {
+            height: 560px;
+        }
+
+        @media (max-width: 991px) {
+            height: 1000px;
+        }
+
+        @media (max-width: 768px) {
+            height: 500px;
+        }
+
+        @media (max-width: 576px) {
+            height: 1100px;
+        }
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: start;
+
+        @media (max-width: 1499px) {
+
+            justify-content: space-between;
+        }
+
+        @media (max-width: 1199px) {}
+
+        @media (max-width: 991px) {
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-around;
+            justify-content: center;
+            top: 50%;
+            padding: 50px;
+        }
+
+        @media (max-width: 768px) {
+            // justify-content: end;
+            align-items: flex-end;
+            // // top: 0%;
+            // // left: 50%;
+            // // transform: translate(0%, -50%);
+            // // flex-direction: column;
+            flex-direction: column;
+            top: 50%;
+            // justify-content: space-between;
+            padding: 15px 15px !important;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+            top: 50%;
+            justify-content: space-between;
+            padding: 50% 15px 15px !important;
+        }
+    }
+
+    &-map {
+        position: relative;
+
+        // @media (max-width: 576px) {
+        //     height: 1182px;
+        // }
+
+        iframe {
+            @media (max-width: 991px) {
+                // height: 100vh;
+            }
+
+            // @media (max-width: 576px) {
+            //     height: 1182px;
+            // }
+        }
+    }
+
+    &__title {
+        margin-bottom: 45px;
+        font-size: 45px;
+
+        @media (max-width: 576px) {
+            font-size: 26px;
+            line-height: 38px;
+        }
+
+        @media (max-width: 1499px) {
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &-form {
+        padding: 30px;
+        width: 470px;
+        background-color: $white;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+            max-width: 100% !important;
+            width: 100%;
+            max-height: 100% !important;
+            display: block;
+        }
+
+        // @media (max-width: 576px) {
+
+        //     // max-width: 330px;
+        //     // max-height: 500px;
+        // }
+        &__element {
+            @media (max-width: 576px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__name {
+            @media (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+
+        &__copy {
+            @media (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        &__switch {
+            display: flex;
+            justify-content: center;
+        }
+
+        // &__input {
+        //     max-width: 410px;
+        // }
+        // &__btn {
+        //     max-width: 410px;
+        // }
+    }
+
+    &-block {
+        padding: 20px;
+        margin-left: 50px;
+
+        @media (max-width: 1499px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 576px) {
+            // max-width: 350px !important;
+            width: 100%;
+            max-height: 350px;
+            padding: 24px 5px 24px 12px;
+        }
+
+        &__title {
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+
+        &__link {
+            color: $primegreen;
+        }
+    }
+
+}

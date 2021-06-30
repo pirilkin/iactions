@@ -1,0 +1,25 @@
+.last-step {
+    &__title {
+        margin-bottom: 60px;
+        font-weight: 600;
+        @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 45px;
+        font-weight: 500;
+        @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+    }
+    &-form {
+        padding: 0 ;
+        border: none;
+    }
+    &__copy {
+        text-align: center;
+    }
+}

@@ -1,0 +1,123 @@
+.company {
+    &-left {
+        &__container{
+            
+            @media (max-width: 1400px) {
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%; 
+            }
+            @media (max-width: 768px) {
+                flex: 0 0 100%;
+                max-width: 100%; 
+            }
+        }
+        
+        &__content {}
+
+        &__btn {
+            padding-left: 35px;
+            padding-right: 35px;
+            font-weight: 700 !important;
+
+            @media (max-width: 1400px) {
+                margin-left: 32px;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 30px;
+            font-weight: 600;
+
+            @media (max-width: 576px) {
+                font-size: 28px;
+                line-height: 40px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__text {
+            padding-left: 32px;
+            position: relative;
+            margin-bottom: 20px;
+
+            @media (max-width:767px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 576px) {
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+
+            &:last-child {
+                margin-bottom: 30px;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                background-color: $primeorange;
+                width: 14px;
+                height: 3px;
+                border-radius: 2px;
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+        }
+    }
+
+    &-right {
+
+        @media (max-width: 1400px) {
+
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            margin-bottom: 0px;
+        }
+        @media (max-width: 768px) {
+            flex: 0 0 100%;
+            max-width: 100%; 
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            font-size: 22px;
+            margin-top: 5px;
+            font-weight: 600;
+
+            @media (max-width: 1720px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 576px) {
+                margin-top: 15px;
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 500;
+            }
+        }
+
+        &__wrapper {
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+
+            img {
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

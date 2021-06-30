@@ -1,0 +1,108 @@
+.custom-modal {
+    width: 100%;
+    display: none;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.54);
+
+    &.active {
+        display: flex;
+    }
+
+    &-header {
+        @media (max-width: 1499px) {
+            border-bottom: none;
+        }
+
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+    }
+
+    &__close {
+        margin-bottom: 25px;
+    }
+
+    &-form {
+        max-width: 467px;
+    }
+    &__form{
+        @media (max-width: 1499px) {
+        padding: 0;
+    }
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1340px;
+        border-radius: 10px;
+        margin: auto;
+        background-color: $white;
+        padding-top: 25px;
+        padding-bottom: 70px;
+        padding-left: 35px;
+        padding-right: 35px;
+
+        @media (max-width: 1499px) {
+            padding-bottom: 35px;
+           
+        }
+        @media (max-width: 576px) {
+            padding: 10px;
+           
+        }
+    }
+
+    &-content {
+        &__title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 45px;
+
+            @media (max-width: 1499px) {
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 28px;
+            margin-bottom: 40px;
+            font-weight: 500;
+            @media (max-width: 576px) {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+        // &__point {
+        //     @media (max-width: 576px) {
+        //         font-size: 14px !important;
+        //         margin-bottom: 20px;
+        //     }
+        // }
+
+        &__left {}
+
+        &__right {}
+
+        &__point {
+            margin-bottom: 20px;
+
+            @media(max-width: 576px) {
+                margin-bottom: 15px;
+            }
+
+            &:before {
+                top: 12px !important;
+            }
+        }
+    }
+}

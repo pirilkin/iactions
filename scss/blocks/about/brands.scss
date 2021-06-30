@@ -1,0 +1,15 @@
+.brands {
+    &__title {
+        font-weight: 600;
+        margin-bottom: 45px;
+        @media (max-width: 576px) {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+    .slider-main__element{
+        @media (max-width: 576px) {
+        padding: 0 10px;
+    }
+    }
+}

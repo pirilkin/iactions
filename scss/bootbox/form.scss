@@ -1,0 +1,15 @@
+.bootbox-body {
+    .form-custom {
+        border: none;
+        padding: 25px 0 0 0;
+
+    }
+}
+
+.custom {
+    &-modal {
+        &__form {
+            padding-top: 25px;
+        }
+    }
+}
